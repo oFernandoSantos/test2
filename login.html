@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN FC FILMS</title>
+  <link rel="stylesheet" href="LOGIN.CSS">
+</head>
+<body>
+
+  <header class="barra-topo">
+    <h1>
+      <span style="color: blue;">FC</span> 
+      <span style="color: #f2f5f7;">FILMS</span>
+    </h1>
+    <nav class="link">
+      <a href="FILMS.html">MEU PERFIL</a>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <section class="container">
+      <form id="cadastroForm" method="get" onsubmit="return handleSubmit(event)">
+        <h1 class="form-title">CADASTRO</h1>
+        <p class="form-subtitle">Faça seu cadastro para assistir</p>
+
+
+        <label for="idade" >Idade</label>
+        <input type="number" id="idade" name="idade" min="18" placeholder="Digite sua idade" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Informe seu e-mail" required />
+
+        <label for="confirmarEmail">Confirmar E-mail</label>
+        <input type="email" id="confirmarEmail" name="confirmarEmail" placeholder="Confirme seu e-mail" required />
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" maxlength="30" required />
+
+        <input type="submit" value="Enviar" />
+      </form>
+	  
+	  
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
